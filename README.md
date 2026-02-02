@@ -24,13 +24,19 @@ pip install -r requirements.txt
 5. Run the script
 
 ```
-python3 bandai_history
+python3 bandai_history.py
 ```
 
 
 ### Options
 
 Since this script saves every tournament as a json file under `events`, you can pass the `-s` flag after the first time to skip the events listing.
+
+You can pass a target with the flag `-t` to count only the results agains a single player:
+
+```
+python3 bandai_history.py -t XXXXXXXX
+```
 
 
 ## Notes, Known Issues, TODOS:

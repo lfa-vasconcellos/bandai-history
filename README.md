@@ -30,14 +30,26 @@ python3 bandai_history.py
 
 ### Options
 
-Since this script saves every tournament as a json file under `events`, you can pass the `-s` flag after the first time to skip the events listing.
+- Since this script saves every tournament as a json file under `events`, you can pass the `-s` flag after the first time to skip the events listing.
 
-You can pass a target with the flag `-t` to count only the results agains a single player:
+- You can pass a target with the flag `-t` to count only the results agains a single player:
 
 ```
 python3 bandai_history.py -t XXXXXXXX
 ```
 
+- You can pass the `-g` flag to group your results by opponents bandai id as well:
+
+```
+python3 bandai_history.py -g 
+```
+
+Optionally, you can add a file with the name "bandai_username_map.txt" to map your friend's bandai user id to their name. The file should have their names and ids in the following format:
+```
+FOO:XXXXXXXX
+BAR:YYYYYYYY
+BAZ:ZZZZZZZZ
+```
 
 ## Notes, Known Issues, TODOS:
 

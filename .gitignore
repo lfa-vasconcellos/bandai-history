@@ -1,3 +1,4 @@
 .env
 events/*
 events_*/*
+bandai_username_map.txt

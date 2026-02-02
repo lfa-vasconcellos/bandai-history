@@ -39,3 +39,21 @@ def tabulate_results(events_data):
     print("=============================")
     for result, qty in player_results_by_losses.items():
         print(f"X-{result}: {qty}")
+
+
+"""
+Count results against single player
+"""
+def results_vs_player(player_bandai_id, events_data):
+    wins, losses = (0, 0)
+
+    for event in events_data:
+        for round in event['rounds']:
+            if 'membership_number' not in round['opponent_users'][0] or round['opponent_users'][0]['membership_number'] != player_bandai_id:
+                continue
+            if round['is_win']:
+                wins += 1
+            else:
+                losses += 1
+
+    return (wins, losses)

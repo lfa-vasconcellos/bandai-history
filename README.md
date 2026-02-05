@@ -51,6 +51,8 @@ BAR:YYYYYYYY
 BAZ:ZZZZZZZZ
 ```
 
+- You can add a line with 'EVENTS_DIR_PATH' to save your events in a different folder (if you're running this script for a friend, for example)
+
 ## Notes, Known Issues, TODOS:
 
 - This script does not compute events with 0 rounds. This may cause a discrepancy in the total number of events and the sum of the results
